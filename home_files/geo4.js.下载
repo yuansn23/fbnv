@@ -1,0 +1,17 @@
+(function(){
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push(['activateGeoDelayedExperiments', {
+    'location':{
+      'city': "JURONGWEST",
+      'continent': "AS",
+      'country': "SG",
+      'region': "",
+      'dma': ""
+    },
+    'ip':"34.87.181.20"
+  }]);
+})
+//
+()
+
+;
