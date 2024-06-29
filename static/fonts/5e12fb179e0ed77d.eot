@@ -1,0 +1,465 @@
+<!DOCTYPE html> <!--[if lt IE 7]> <html class="ie oldie ie6" lang="zh"> <![endif]--> <!--[if IE 7]> <html class="ie oldie ie7" lang="zh"> <![endif]--> <!--[if IE 8]> <html class="ie ie8" lang="zh"> <![endif]--> <!--[if IE 9]> <html class="ie ie9" lang="zh"> <![endif]--> <!--[if gt IE 10]><!--> <html lang="zh"> <!--<![endif]--> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> <!-- Set render engine for 360 browser --> <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp--> <meta http-equiv="Cache-Control" content="no-siteapp"/> <!-- HTML5 shim for IE8 support of HTML5 elements --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon"> <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"> <link type="text/css" rel="stylesheet" href="/index.php?m=index&a=getmincss&b=./public/home/css/common.css,./public/home/css/login.css,./public/home/css/layer.css&t=4"/> <meta name="keywords" content=""/> <meta name="description" content=""/> <title>PDlive</title> <link type="text/css" rel="stylesheet" href="/index.php?m=index&a=getmincss&b=./public/home/css/index.css&t=2"/> </head> <style type="text/css">
+	.feed-list .feed.live::before {
+	    background: url("/public/home/images/index/live_zh-cn.png") no-repeat center;
+	}
+</style> <body> <div class="wrapper"> <style type="text/css">
+	body{
+		background-image:url(/public/images/index_live_bg.png);
+		
+	}
+</style> <!-- <div style="margin:0 auto; width:100%;background: url(/public/images/top.png);height:47px;background-repeat: repeat-x;background-color:#fff;"></div>	 --> <div id="doc-hd" class="header double"> <div class="topbar"> <div class="container clearfix"> <div class="hd-logo"> <a href="#" class="links"></a> </div> <ul class="hd-nav"> <li class="item"><a  style="width:80px;"href="/" class="current" >首页</a></li> <!-- 					<li class="item"><a href="#"   >我的关注</a></li> --> <li class="item"><a href="/index.php?m=Category&a=index&cat=2"   >女神</a></li> <li class="item"><a href="/index.php?m=Category&a=index&cat=1"   >男神</a></li> <li class="item"><a style="width:80px;" href="/index.php?m=App&a=programe"   >APP</a></li> <li class="item"><a style="width:80px;" href="/index.php?m=Charge&a=index"  > 充值</a></li> <li class="item"><a href="https://yaougame.oss-cn-hongkong.aliyuncs.com/pdlive1.8.01.zip" style="font-size: 13px;" href="#">最新助手下载</a></li> </ul> <!--登录--> <!--<div class="hd-login">--> <!--  --> <!--	<div class="no-login">--> <!--		<i class="icon-avatar"></i>--> <!--		<a href="###" class="tologin">登录  </a>--> <!--		<i class="icon-level"></i>--> <!--		<i class="icon-more"></i>--> <!--	</div>--> <!--	--> <!--	<div class="huajiaodou">--> <!--	  --> <!--		 <a ></a> --> <!--	    --> <!--		 <a class="btn-huajiaodou" href="./index.php?m=Mall&a=mounts" target="_blank">我的商城</a> --> <!--	</div> --> <!--</div>--> <!--搜索--> <!--<div class="search-bar">--> <!--	<div class="search-hd">--> <!--	</div>--> <!--	<div class="search-bd">--> <!--		<form class="search-form" action="index.php?m=Index&a=translate" target="_top" method="post" name="search-form">--> <!--			<div class="search-input-wrap">--> <!--				<input  class="search-input" name="keyword" id="keyword" placeholder="Please enter a username or user ID"/>--> <!--				<input type="submit" class="search-submit-btn"/>--> <!--			</div>--> <!--		</form>--> <!--	</div>--> <!--	<div class="search-ft">--> <!--		<div id="suggest-container" class="suggest-container" style="display:none;">--> <!--			<div class="suggest-bd">--> <!--			</div>--> <!--			<div class="suggest-ft">--> <!--			</div>--> <!--		</div>--> <!--	</div>--> <!--</div>--> <!--
+下线时将下面div元素的style改为"display:none;"
+上线时将下面div元素的style改为"display:block;"X35
+图片尺寸120X35
+--> <!-- <div id="top-header-position" class="top-header-position" style="display:none;"> <a target="_blank" href="#"><img src="http://p0.qhimg.com/t0135077f9010b04266.jpg"/></a> </div> --> </div> </div> </div> <div class="top_line"></div> <!--<div class="index_live">--> <!--	<div style="height: 20px;"></div>--> <!--	<div class="index_live_area">--> <!--		<div class="index_live_area_left" style="width: 100%;">--> <!--			<div id="video" style="width: 100%; height: 590px;"></div>--> <!--			<div class="video_mask" style="width: 100%;">--> <!--				<a href="/" target="_blank">--> <!--					<div class="video_mask_center">--> <!--						<p><img src="/public/home/images/index/enter_room.png"></p>--> <!--						<p>进入直播间</p>--> <!--					</div>--> <!--				</a>--> <!--			</div>--> <!--		</div>--> <!--		<div class="clearboth"></div>--> <!--	</div>--> <!--	<div class="scroll_top">--> <!--		<div class="fullSlide">--> <!-- <div class="bd"> <!--				<ul style="width:100%;height: 120px;">--> <!--					--> <!--				</ul>--> <!--			</div>--> <!--			<div class="hd"><ul></ul></div> --> <!-- <span class="prev"></span> <!--			<span class="next"></span> --> <!--<div class="index_live_area_right">--> <!--	<ul>--> <!--		--> <!--	</ul>--> <!--</div>--> <!--		</div>        	--> <!--   	</div>	--> <!--</div>--> <div id="doc-bd"> <div class="container clearfix"> <div class="main_top_pic"><img src="/public/home/images/index/main_top.png"></div> <div class="main clearfix"> <div id="focuspic" class="focuspic feed-list"> <ul class="list"> <li class="normal  feed mar_left0" > <p class="normal_title">Reena</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240316132334_4af1ca6f6fcc30a4a5ad4bd3aa154ea2?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240316132334_4af1ca6f6fcc30a4a5ad4bd3aa154ea2?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">善雨</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240222011612_2b4b40e9a978023208498834973423bf?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240222011612_2b4b40e9a978023208498834973423bf?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">亦可</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240202080612_6bfe440bfddd33e86f276f3b8e1b5da9?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240202080612_6bfe440bfddd33e86f276f3b8e1b5da9?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">西西😜</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240228002428_0edc07d0188b85d27c7b03d30843d3dd?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240228002428_0edc07d0188b85d27c7b03d30843d3dd?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">冷曦</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240317131723_7e4f7e2df00a2682ede205dd3a9c91bd?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240317131723_7e4f7e2df00a2682ede205dd3a9c91bd?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">梦儿</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240308173923_d2c597c12abf3d3028c67cf399639e64?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240308173923_d2c597c12abf3d3028c67cf399639e64?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">赴赴</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240227153214_3513d330e66f2b3206c4253dcc1fced5?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240227153214_3513d330e66f2b3206c4253dcc1fced5?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">Janett</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240307211352_b799162b217bb3dc56f0c6440d4e7a40?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240307211352_b799162b217bb3dc56f0c6440d4e7a40?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">琴儿</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240308174015_a55039a44a66dae34b91b666852b8ce7?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240308174015_a55039a44a66dae34b91b666852b8ce7?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">研可</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240311171205_36716d4702ef0ef5e84f36869b19e58e?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240311171205_36716d4702ef0ef5e84f36869b19e58e?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">成宇</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240320000050_2b4a2a9aa697455c68081ee923783195?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240320000050_2b4a2a9aa697455c68081ee923783195?imageView2/2/w/600/h/600"/> </a> </li><li class="normal  feed " > <p class="normal_title">敉蓝</p> <!--target="_blank" href="#"--> <a class="link clearfix"> <img class="screenshot thumb" src="https://downs.yaoulive.com/20240218162056_3d6d92f3b37e2c2e3c42a637f8c6d8df?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240218162056_3d6d92f3b37e2c2e3c42a637f8c6d8df?imageView2/2/w/600/h/600"/> </a> </li> </ul> </div> <div class="gray_line"></div> <!-- 热门直播 --> <div class="g-box feed-list" id="hot"> <div class="box-hd"> <h2 class="box-title"><span class="icon"><img src="/public/home/images/index/remen.png"></span>热门直播</h2> <!-- 	<a class="box-more" href="/category/1">查看更多 &gt;&gt;</a> --> </div> <div class="box-bd"> <ul class="list"> </ul> </div> </div> <div class="gray_line"></div> <!-- 最新直播 --> <div class="g-box feed-list" id="living"> <div class="box-hd"> <h2 class="box-title"><span class="icon"><img src="/public/home/images/index/zuixin.png"></span>最新直播</h2> </div> <div class="box-bd"> <ul class="list"> <li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240321/21d0fe0d563980e288fbc236f582cf54.jpg?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240321/21d0fe0d563980e288fbc236f582cf54.jpg?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240321/21d0fe0d563980e288fbc236f582cf54.jpg?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240321/21d0fe0d563980e288fbc236f582cf54.jpg?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">娅妮</p> <p class="bottom"> <span class="type">这家伙很懒，什么都没留下</span> <span class="nums">10</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240321174207_a1a4c13e2b848b352b262b74e6a31f19?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240321174207_a1a4c13e2b848b352b262b74e6a31f19?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240321174207_a1a4c13e2b848b352b262b74e6a31f19?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240321174207_a1a4c13e2b848b352b262b74e6a31f19?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">Becky</p> <p class="bottom"> <span class="type">超级无敌宇宙暴龙战神</span> <span class="nums">13</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240226154912_aa8689ef1278227f467744c98d52ba24?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240226154912_aa8689ef1278227f467744c98d52ba24?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240226154912_aa8689ef1278227f467744c98d52ba24?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240226154912_aa8689ef1278227f467744c98d52ba24?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">樱樱.</p> <p class="bottom"> <span class="type">hi 小乖乖</span> <span class="nums">16</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240314172811_40d64390f2a22714cced7471cf92dca7?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240314172811_40d64390f2a22714cced7471cf92dca7?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240314172811_40d64390f2a22714cced7471cf92dca7?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240314172811_40d64390f2a22714cced7471cf92dca7?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">阿辞</p> <p class="bottom"> <span class="type">这家伙很懒，什么都没留下</span> <span class="nums">11</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240305203337_50acb337a99e8f97f59f459de2c774ce?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240305203337_50acb337a99e8f97f59f459de2c774ce?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240305203337_50acb337a99e8f97f59f459de2c774ce?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240305203337_50acb337a99e8f97f59f459de2c774ce?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">Louisebaby</p> <p class="bottom"> <span class="type">不疾不徐</span> <span class="nums">16</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240307150020_a3838458c79cf9fd0e6f755ca549ae7e?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240307150020_a3838458c79cf9fd0e6f755ca549ae7e?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240307150020_a3838458c79cf9fd0e6f755ca549ae7e?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240307150020_a3838458c79cf9fd0e6f755ca549ae7e?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">泡泡✘</p> <p class="bottom"> <span class="type">这家伙很懒，什么都没留下</span> <span class="nums">13</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240320154651_9f5d12151ca44827cdf4c901a5e02f10?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240320154651_9f5d12151ca44827cdf4c901a5e02f10?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240320154651_9f5d12151ca44827cdf4c901a5e02f10?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240320154651_9f5d12151ca44827cdf4c901a5e02f10?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">Tina🐰</p> <p class="bottom"> <span class="type">Love yourself ~</span> <span class="nums">11</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240311184126_2f04a89193bf476441d37b7e44b27227?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240311184126_2f04a89193bf476441d37b7e44b27227?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240311184126_2f04a89193bf476441d37b7e44b27227?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240311184126_2f04a89193bf476441d37b7e44b27227?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">小鱼干🐾</p> <p class="bottom"> <span class="type">这家伙很懒，什么都没留下</span> <span class="nums">13</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240311153718_93b5171266f369c6c4783d779115074c?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240311153718_93b5171266f369c6c4783d779115074c?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240311153718_93b5171266f369c6c4783d779115074c?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240311153718_93b5171266f369c6c4783d779115074c?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">小A呀</p> <p class="bottom"> <span class="type">这家伙很懒，什么都没留下</span> <span class="nums">11</span> </p> </div> </div> </a></li><li class="feed live"><a class="link" ><img class="screenshot thumb" src="https://downs.yaoulive.com/20240223035258_98f5587a74316a0570cb2aa093e1b090?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240223035258_98f5587a74316a0570cb2aa093e1b090?imageView2/2/w/600/h/600"/> <div class="user"> <div class="user_left fl"><img class="avatar thumb" src="https://downs.yaoulive.com/20240223035258_98f5587a74316a0570cb2aa093e1b090?imageView2/2/w/600/h/600" data-original="https://downs.yaoulive.com/20240223035258_98f5587a74316a0570cb2aa093e1b090?imageView2/2/w/600/h/600"/></div> <div class="user_right fl"> <p class="username">芋圆</p> <p class="bottom"> <span class="type">夸我的都会变帅变美😌</span> <span class="nums">13</span> </p> </div> </div> </a></li> </ul> </div> </div> </div> </div> </div> <div class="container"> <div id="pagination" class="pagination" style="text-align: right"> <ul> <li>首页</li> <li>&lt;</li> <li>1</li> <li class="active">2</li> <li>3</li> <li>4</li> <li>5</li> <li>&gt;</li> <li>尾页</li> <li class="totalPage"><span>跳转到</span><input type="number"><span>页</span></li> <li class="totalPage">共&nbsp;&nbsp;页</li> <li class="totalPage">每页&nbsp;&nbsp;条</li> <li class="totalPage" style="display: none;">合计&nbsp;&nbsp;条数据</li> </ul> </div> </div> <div class="container"> <div class="box-hd"> <h2 class="box-title"><span class="icon"><img style="vertical-align: middle;" src="/public/home/images/index/zuixin.png"></span>最新公告</h2> </div> <ol id="ol"> </ol> </div> <div class="area-ft"> <div class="down-ft"> <!-- <div class="down-ft_one fl"> <div class="guan_wei"> <div class="guan_wei_icon fl"> <img src="https://napi.yaoulive.com/data/upload/20210407/606d430185b62.png"> </div> <div class="guan_wei_con fl"> <p class="guan_wei_title"></p> <p class="guan_wei_desc"></p> </div> <div class="clearboth"></div> </div> <div class="guan_wei mar_top15"> <div class="guan_wei_icon fl"> <img src="https://napi.yaoulive.com/data/upload/20210407/606d43089430e.png"> </div> <div class="guan_wei_con fl"> <p class="guan_wei_title"></p> <p class="guan_wei_desc"></p> </div> <div class="clearboth"></div> </div> </div> --> <div class="down-ft_two fl"> <ul class="ewm_list"> <!--<li> <p class="ewm_title">微信公众号</p> <p class="ewm_icon"><img src="http://api.yaoulive.com/wxshare/Public/img/3.jpg"></p> </li>--> <li> <p class="ewm_title">android版下载</p> <p class="ewm_icon"><img src="https://downs.yaoulive.com/xiazai/D6C87C53-DDCE-4e14-9130-311F76C14C20.png"></p> </li> <li> <p class="ewm_title">iPhone版下载</p> <p class="ewm_icon"><img src="https://downs.yaoulive.com/xiazai/D6C87C53-DDCE-4e14-9130-311F76C14C20.png"></p> </li> <div class="clearboth"></div> </ul> </div> <div class="down-ft_three fl"> <ul class="href_list fl mar_left50"> <p>PDlive</p> <!-- <li><a href="/index.php?m=Shop&a=index">商城</a></li> --> <!-- <li><a href="/index.php?m=Order&a=index">排行</a></li> --> </ul> <ul class="href_list fl"> <p>新手帮助</p> <li><a href="https://www.pdlive.com/index.php?g=portal&m=page&a=index&id=5" target="_blank" >关于我们</a></li> <li><a href="https://www.pdlive.com/index.php?g=portal&m=page&a=index&id=2" target="_blank">服务协议</a></li> <li><a href="https://www.pdlive.com/index.php?g=portal&m=page&a=index&id=66" target="_blank">隐私政策</a></li> <li><a href="https://kefu.yaoulive.com/index/index/kefu?u=5c6cbcb7d55ca" target="_blank">在线客服</a></li> </ul> <div class="clearboth"></div> </div> <div class="down-ft_four fl" style="width:420px"> <p style="font-size:12px"><span id="company">香港新娛科技有限公司</span><br>HONG KONG NEW ENTERTAINMENT TECHNOLOGY CO., LIMITED</p> <p style="font-size:12px">地址： <span id="address">Room 1508, 15F, phase II office building, guoyalan center, 625 Nathan Road, Kowloon</span></p> <p style="font-size:12px">客服热线(服务时间:13:00-00:30)</p> </div> <div class="clearboth"></div> </div> </div> <div id="doc-ft"> <div class="container"> <p class="footer"> </p> </div> </div> <!-- <div style="position:absolute;top:0;z-index:1000;"> <img src="/public/images/adlift.png" class="adlift"> </div> <div style="position:absolute;top:0;right:0;z-index:1000;"> <img src="/public/images/adright.png" class="adright"> </div>		 --> <script src="/index.php?m=index&a=getminjs&b=./public/home/js/jquery.1.10.2.js,./public/home/js/jquery.lazyload.min.js&t=1"></script> <script type="text/javascript">
+			window._DATA = window._DATA || {};
+			window._DATA.user = null;
+			window._DATA.userlogin = '';
+		</script> <script type="text/javascript" src="/index.php?m=index&a=getminjs&b=./public/home/js/zh-cn/login.js,./public/home/js/layer.js&=4"></script> <script type="text/javascript">
+	$(function(){
+		var adw = $(window).width();
+		//console.info(w);//1425 1364
+		if (adw<1440){
+			$(".adlift,.adright").css("width","150px");
+		}
+	})
+//1.增加div
+function addChild(top,snowShape) {
+    var div = document.createElement("div");
+    div.innerHTML = snowShape;
+    div.className = "flake";
+    div.style.position = 'absolute';
+    div.style.color = 'white';//white
+    div.style.opacity = 0.9;
+    div.style.left = parseInt(Math.random() * window.innerWidth) + 'px';
+    div.style.top = top + 'px';
+    div.style.fontSize = parseInt(Math.random() * 50) + 'px';
+    document.body.appendChild(div);
+};
+//2.雪花自动降落
+function autoWipe(snowSpeed,snowShape) {
+    var flake = document.getElementsByClassName('flake');
+    var timer = setInterval(function () {
+        for (var i = 0; i < flake.length; i++) {
+            var opacity = flake[i].style.opacity;
+            var offsetTop = Number((flake[i].style.top).replace('px',''));
+            if (offsetTop < window.innerHeight) {
+                offsetTop = offsetTop + snowSpeed;
+                opacity = opacity - 0.003;
+                flake[i].style.top = offsetTop + 'px';
+                flake[i].style.opacity = opacity;
+            } else {
+                document.body.removeChild(flake[i]);
+                addChild(0,snowShape);
+            }
+        }
+    }, 100);
+};
+//3.形成最后效果
+function final(bigSnowParam,snowShape) {
+    for (var i = 0; i < bigSnowParam.snowNum; i++) {
+        addChild(parseInt(Math.random() * window.innerHeight),snowShape);
+    }
+    autoWipe(bigSnowParam.snowSpeed,snowShape);
+};
+//4.参数选择，snowNum 为每批降雪数量，snowSpeed为每批降雪速度，单位为秒
+//大雪参考值
+var bigSnowParam = {
+       snowNum:242,
+       snowSpeed:6
+};
+//中雪参考值
+var midSnowParam = {
+    snowNum:242,
+    snowSpeed:3
+};
+//小雪参考值
+var littleSnowParam = {
+    snowNum:242,
+    snowSpeed:1
+};
+//自定义雪参考值
+var selfSnowParam = {
+    snowNum:50,//值为number
+    snowSpeed:2//值为number
+};
+//雪花形状参考
+var snowShapeObj = {
+    1:'❆',
+    2:'❄',
+    3:'❅',
+    4:'✼',
+    5:'✼',
+    6:'❉',
+    7:'❇',
+    8:'❈',
+    9:'❊',
+    10:'✥',
+    11:'✺'
+};
+//5.调用
+// final(selfSnowParam,snowShapeObj[1]);
+</script> <script>
+    function myPagination(_ref) {
+        var pageSize = _ref.pageSize,
+            pageTotal = _ref.pageTotal,
+            curPage = _ref.curPage,
+            id = _ref.id,
+            getPage = _ref.getPage,
+            showPageTotalFlag = _ref.showPageTotalFlag,
+            showSkipInputFlag = _ref.showSkipInputFlag,
+            pageAmount = _ref.pageAmount,
+            dataTotal = _ref.dataTotal;
+
+        this.pageSize = pageSize || 5; //分页个数
+        this.pageTotal = pageTotal; //总共多少页
+        this.pageAmount = pageAmount; //每页多少条
+        this.dataTotal = dataTotal; //总共多少数据
+        this.curPage = curPage || 1; //初始页码
+        this.ul = document.createElement('ul');
+        this.id = id;
+        this.getPage = getPage;
+        this.showPageTotalFlag = showPageTotalFlag || false; //是否显示数据统计
+        this.showSkipInputFlag = showSkipInputFlag || false; //是否支持跳转
+        this.init();
+    };
+
+    // 给实例对象添加公共属性和方法
+    myPagination.prototype = {
+        init: function init() {
+            var pagination = document.getElementById(this.id);
+            pagination.innerHTML = '';
+            this.ul.innerHTML = '';
+            pagination.appendChild(this.ul);
+            var that = this;
+            //首页
+            that.firstPage();
+            //上一页
+            that.lastPage();
+            //分页
+            that.getPages().forEach(function (item) {
+                var li = document.createElement('li');
+                if (item == that.curPage) {
+                    li.className = 'active';
+                } else {
+                    li.onclick = function () {
+                        that.curPage = parseInt(this.innerHTML);
+                        that.init();
+                        that.getPage(that.curPage);
+                    };
+                }
+                li.innerHTML = item;
+                that.ul.appendChild(li);
+            });
+            //下一页
+            that.nextPage();
+            //尾页
+            that.finalPage();
+
+            //是否支持跳转
+            if (that.showSkipInputFlag) {
+                that.showSkipInput();
+            }
+            //是否显示总页数,每页个数,数据
+            if (that.showPageTotalFlag) {
+                that.showPageTotal();
+            }
+        },
+        //首页
+        firstPage: function firstPage() {
+            var that = this;
+            var li = document.createElement('li');
+            li.innerHTML = '首页';
+            this.ul.appendChild(li);
+            li.onclick = function () {
+                var val = parseInt(1);
+                that.curPage = val;
+                that.getPage(that.curPage);
+                that.init();
+            };
+        },
+        //上一页
+        lastPage: function lastPage() {
+            var that = this;
+            var li = document.createElement('li');
+            li.innerHTML = '<';
+            if (parseInt(that.curPage) > 1) {
+                li.onclick = function () {
+                    that.curPage = parseInt(that.curPage) - 1;
+                    that.init();
+                    that.getPage(that.curPage);
+                };
+            } else {
+                li.className = 'disabled';
+            }
+            this.ul.appendChild(li);
+        },
+        //分页
+        getPages: function getPages() {
+            var pag = [];
+            if (this.curPage <= this.pageTotal) {
+                if (this.curPage < this.pageSize) {
+                    //当前页数小于显示条数
+                    var i = Math.min(this.pageSize, this.pageTotal);
+                    while (i) {
+                        pag.unshift(i--);
+                    }
+                } else {
+                    //当前页数大于显示条数
+                    var middle = this.curPage - Math.floor(this.pageSize / 2),
+                        //从哪里开始
+                        i = this.pageSize;
+                    if (middle > this.pageTotal - this.pageSize) {
+                        middle = this.pageTotal - this.pageSize + 1;
+                    }
+                    while (i--) {
+                        pag.push(middle++);
+                    }
+                }
+            } else {
+                console.error('当前页数不能大于总页数');
+            }
+            if (!this.pageSize) {
+                console.error('显示页数不能为空或者0');
+            }
+            return pag;
+        },
+        //下一页
+        nextPage: function nextPage() {
+            var that = this;
+            var li = document.createElement('li');
+            li.innerHTML = '>';
+            if (parseInt(that.curPage) < parseInt(that.pageTotal)) {
+                li.onclick = function () {
+                    that.curPage = parseInt(that.curPage) + 1;
+                    that.init();
+                    that.getPage(that.curPage);
+                };
+            } else {
+                li.className = 'disabled';
+            }
+            this.ul.appendChild(li);
+        },
+        //尾页
+        finalPage: function finalPage() {
+            var that = this;
+            var li = document.createElement('li');
+            li.innerHTML = '尾页';
+            this.ul.appendChild(li);
+            li.onclick = function () {
+                var yyfinalPage = that.pageTotal;
+                var val = parseInt(yyfinalPage);
+                that.curPage = val;
+                that.getPage(that.curPage);
+                that.init();
+            };
+        },
+        //是否支持跳转
+        showSkipInput: function showSkipInput() {
+            var that = this;
+            var li = document.createElement('li');
+            li.className = 'totalPage';
+            var span1 = document.createElement('span');
+            span1.innerHTML = '跳转到';
+            li.appendChild(span1);
+            var input = document.createElement('input');
+            input.setAttribute("type", "number");
+            input.onkeydown = function (e) {
+                var oEvent = e || event;
+                if (oEvent.keyCode == '13') {
+                    var val = parseInt(oEvent.target.value);
+                    if (typeof val === 'number' && val <= that.pageTotal) {
+                        that.curPage = val;
+                        that.getPage(that.curPage);
+                    } else {
+                        alert("跳转页数不能大于总页数 !")
+                    }
+                    that.init();
+                }
+            };
+            li.appendChild(input);
+            var span2 = document.createElement('span');
+            span2.innerHTML = '页';
+            li.appendChild(span2);
+            this.ul.appendChild(li);
+        },
+        //是否显示总页数,每页个数,数据
+        showPageTotal: function showPageTotal() {
+            var that = this;
+            var li = document.createElement('li');
+            li.innerHTML = '共&nbsp' + that.pageTotal + '&nbsp页';
+            li.className = 'totalPage';
+            this.ul.appendChild(li);
+            var li2 = document.createElement('li');
+            li2.innerHTML = '每页&nbsp' + that.pageAmount + '&nbsp条';
+            li2.className = 'totalPage';
+            this.ul.appendChild(li2);
+            var li3 = document.createElement('li');
+            li3.innerHTML = '合计&nbsp' + that.dataTotal + '&nbsp条数据';
+            li3.className = 'totalPage';
+            this.ul.appendChild(li3);
+        }
+    };
+
+</script> <script>
+    var data = {
+        url: 'https://www.pdlive.com/api/public/?service=Home.getNoticeList&p=',
+    }
+
+    var http = function () {
+        var xml = new XMLHttpRequest();
+        return {
+            request: function (method, url, data, success, error) {
+                xml.open(method, (url));
+                if (method == 'GET') {
+                    xml.send();
+                } else {
+                    xml.setRequestHeader('Content-Type', 'application/json');
+                    xml.send(JSON.stringify(data));
+                }
+                xml.onreadystatechange = function () {
+                    if (xml.readyState == 4 && xml.status == 200) {
+                        success(JSON.parse(xml.response))
+                    }
+                }
+                xml.onerror = function () {
+                    error(xml.response)
+                }
+            }
+        }
+
+
+    }
+    GEt(1)
+function GEt(page){
+    http().request('GET', data.url + page, [], (data) => {
+        if (data.data.code == 0) {
+            var list = data.data;
+            add(list.info)
+            new myPagination({
+                id: 'pagination',
+                curPage: 1,
+                pageTotal: list.total_num,
+                pageAmount: list.select_num,
+                dataTotal: list.total_num*list.select_num,
+                pageSize:Math.ceil(list.total_num/list.select_num) ,
+                showPageTotalFlag: true,
+                showSkipInputFlag: true,
+                getPage: function (page) {
+                    GEt(page)
+                }
+            })
+
+        }
+
+    }, (err) => {})
+}
+
+
+
+
+    function add(list) {
+        // 优化性能，插入不会造成回流
+        const fragment = document.querySelector('#ol')
+        var childs = fragment.childNodes;
+        for (var i = childs.length - 1; i >= 0; i--) {
+            fragment.removeChild(childs[i]);
+        }
+        for (let i = 0; i < list.length; i++) {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="https://www.pdlive.com/h5/dist_mo/gonggao.html?notice_id=${list[i].notice_id}">${list[i].notice_title}</a> <span>${list[i].notice_date}</span> `;
+            fragment.appendChild(li);
+        }
+    }
+
+
+</script> <div class="fix_area"> <div class="fix_area_left fl"> <div class="fix_area_left_con"> <p>扫一扫</p> <p>手机看直播</p> <p class="ewm_img"><img src="https://downs.yaoulive.com/xiazai/D6C87C53-DDCE-4e14-9130-311F76C14C20.png"></p> <p class="app_ewm_name">Android APP</p> </div> </div> <div class="fix_area_right fl"> <p class="app_type_icon app_type_android mar_top75"> <img src="/public/home/images/index/az.png"> </p> <p class="app_type_icon app_type_apple"> <img src="/public/home/images/index/pg1.png"> </p> <p class="app_type_icon app_type_lianxi" style="background-color:#C4C4C4;border-radius:5px;cursor:crosshair;"> <a href="https://kefu.yaoulive.com/index/index/kefu?u=5c6cbcb7d55ca" target="_blank"><img src="/public/home/images/index/lianxi.png"></a> </p> <p class="go_top"> <img src="/public/home/images/index/zhiding.png"> </p> </div> <div class="clearboth"></div> </div> <!--
+下线时将下面div元素的style改为"display:none;"
+上线时将下面div元素的style改为"display:block;"
+图片尺寸100X100
+--> <div id="right-fixed-position" class="right-fixed-position" style="display:none;" > <a href="#" class="close"></a> <a href="#" class="link" target="_blank"><img src="#"/></a> </div> </div> <script type="text/javascript" src="/public/home/js/jquery.SuperSlide.2.1.1.js"></script> <script type="text/javascript" src="/public/home/ckplayer/ckplayer.js?t=123123"></script> <script>
+(function(){
+	/* 控制左右按钮显示 */
+	jQuery(".fullSlide").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.5) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+
+	/* 调用SuperSlide */
+	jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click",
+		startFun:function(i){
+			var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
+			if( !!curLi.attr("_src") ){
+				curLi.css("background-image",curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+			}
+		}
+	});	
+})()
+</script> <script>
+$(function(){
+	//图片延迟加载
+	$("img.thumb").lazyload({effect: "fadeIn"});		
+})
+</script> <!-- 视频播放start --> <script type="text/javascript">
+	var videoObject = {
+		container: '#video', //容器的ID或className
+		variable: 'player',//播放函数名称
+		poster:'http://img.ksbbs.com/material/poster.jpg',//封面图片
+		//flashplayer:true,
+		video: '',		
+		autoplay:true,
+		flashplayer:false,
+
+	};
+	var player = new ckplayer(videoObject);
+</script> <!-- 视频播放end --> <script type="text/javascript">
+	$(function(){
+		$(".index_live_area_right ul li").click(function(){
+			if($(this).hasClass("on")){
+				return;
+			}
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+			//$("#video video").attr("src","http://img.ksbbs.com/asset/Mon_1703/eb048d7839442d0.mp4");
+			videoObject.video=$(this).attr("data-pull");
+			$(".video_mask a").attr("href","/"+$(this).attr("data-uid"));
+			var player = new ckplayer(videoObject);
+		});
+
+		$(".index_live_area_left").mouseover(function() {
+			$(".video_mask").show();
+		});
+		$(".index_live_area_left").mouseleave(function() {
+			$(".video_mask").hide();
+		});
+
+
+		var apk_ewm='https://downs.yaoulive.com/xiazai/D6C87C53-DDCE-4e14-9130-311F76C14C20.png';
+		var ios_ewm='https://downs.yaoulive.com/xiazai/D6C87C53-DDCE-4e14-9130-311F76C14C20.png';
+
+		$(".app_type_apple").mouseover(function(){
+			$(this).find('img').attr("src","/public/home/images/index/pg.png");
+			$(".app_type_android").find('img').attr("src","/public/home/images/index/az1.png");
+			$(".ewm_img").find("img").attr("src",ios_ewm);
+			$(".app_ewm_name").text("iOS App");
+		});
+			
+		
+
+		$(".app_type_apple").mouseleave(function(){
+			$(this).find('img').attr("src","/public/home/images/index/pg1.png");
+			$(".app_type_android").find('img').attr("src","/public/home/images/index/az.png");
+			$(".ewm_img").find("img").attr("src",apk_ewm);
+			$(".app_ewm_name").text("Android App");
+		});
+
+		$(".go_top").mouseover(function() {
+			$(this).find("img").attr("src",'/public/home/images/index/zhiding1.png');
+		});
+		$(".go_top").mouseleave(function() {
+			$(this).find("img").attr("src",'/public/home/images/index/zhiding.png');
+		});
+		
+		$(".go_top").click(function(){
+			document.body.scrollTop = 0;
+    		document.documentElement.scrollTop = 0;
+		});
+	});
+</script> </body> </html>
