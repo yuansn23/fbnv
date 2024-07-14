@@ -20,13 +20,30 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-  
+  <!-- Start NB Pixel Snippet -->
+<script>
+!(function (e, n, t, i, p, a, s) {
+  e[i] ||
+    (((p = e[i] =
+      function () {
+        p.process ? p.process.apply(p, arguments) : p.queue.push(arguments);
+      }).queue = []),
+    (p.t = +new Date()),
+    ((a = n.createElement(t)).async = 1),
+    (a.src = 'https://static.newsbreak.com/business/tracking/nbpixel.js?t=' + 864e5 * Math.ceil(new Date() / 864e5)),
+    (s = n.getElementsByTagName(t)[0]).parentNode.insertBefore(a, s));
+})(window, document, 'script', 'nbpix'),
+  nbpix('init', 'ID-1811263546405695490'),
+  nbpix('event', 'pageload');
+</script>
+<!-- End NB Pixel Snippet -->
   
 </head>
 <body class="viewport">
 <!--  执行方法-->
 <script>
-     
+    
+   nbpix('event','complete_registration');
        window.location.href = 'https://line.me/ti/p/CjJzlpqLVx';
     }
 </script>
