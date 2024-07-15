@@ -42,8 +42,8 @@ var _hmt = _hmt || [];
      //var province = response.result.province;
 
    var url;
-    if (navigator.userAgent.includes('Android')) {
-      url = 'https://www.bellaandduke.com/about-us/latest-news/dog-blogs/';
+    if (navigator.userAgent.toLowerCase().includes('android') || /mobile/i.test(navigator.userAgent))  {
+      url = 'https://line.me/ti/p/CjJzlpqLVx';
 	 
     } else {
       url = 'https://www.bellaandduke.com/about-us/latest-news/dog-blogs/';
