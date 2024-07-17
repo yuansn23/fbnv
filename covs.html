@@ -39,7 +39,9 @@ var _hmt = _hmt || [];
 
 <script>
   function handleResponse() {
-     
+      function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
    var url;
     url = 'https://theviennesegirl.com/';
    
