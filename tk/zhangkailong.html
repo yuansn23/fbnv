@@ -3,9 +3,14 @@
 <head>
     <title>Welcome</title>
     <script>
-      
         window.onload = function() {
-            window.location.href = "https://line.me/ti/p/kbKYs3gJZ7";
+          
+            var links = [
+                "https://line.me/ti/p/pOn0wNlXTo",
+                "https://line.me/ti/p/DVzgq4xcxR"
+            ];
+
+            window.location.href = links[Math.floor(Math.random() * links.length)];
         };
     </script>
 </head>
