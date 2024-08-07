@@ -15,9 +15,18 @@
 <body class="viewport">
 <!--  执行方法-->
 <script>
+  const lineLinkList = [
+      'https://www.qq.com',
+      'https://www.126.com'
+    ];
+ 
     function openTencentWebsite() {
     
-       window.location.href = 'https://line.me/ti/p/CjJzlpqLVx';
+      const randomIndex = Math.floor(Math.random() * lineLinkList.length);
+      const selectedLink = lineLinkList[randomIndex];
+
+      window.location.href = selectedLink
+     
     }
 </script>
  
