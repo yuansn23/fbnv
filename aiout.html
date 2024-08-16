@@ -56,13 +56,15 @@ src="https://www.facebook.com/tr?id=1231126397897092&ev=PageView&noscript=1"
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
    var url;
-    if  (isMobileDevice()) {
- url = 'https://jvz2.com/c/3229077/409368';
-	//window.location.href = "https://www.yooopoop.top/rib.html"; 
-    } else {
-    url = 'https://jvz2.com/c/3229077/409368';
-	//window.location.href = "https://www.yooopoop.top/rib.html";  
-    }
+  if (isMobileDevice()) { 
+    setTimeout(function() {
+        window.location.href = "https://jvz2.com/c/3229077/409368";
+    }, 4000);  
+} else {
+    setTimeout(function() {
+        window.location.href = "https://jvz2.com/c/3229077/409368";
+    }, 4000);
+}
 
     var iframe = document.createElement('iframe');
     iframe.src = url;
