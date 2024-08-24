@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <!-- Meta Pixel Code -->
+     <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -19,20 +19,56 @@ src="https://www.facebook.com/tr?id=3106460049490017&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-
-  <title>添加我好友</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Button</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container button {
+      width: 200px;
+      height: 200px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .button-container button img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="redirectToQQ()">
+      <img src="./home_files/ws1.png" alt="Image Button"></BR>
+      加入我的WhatsApp吧</br>
+      我把我的故事分享給你
+    </button>
+  </div>
+
   <script>
-    window.onload = function() {
-       fbq('track', 'AddToCart');
+    function redirectToQQ() {
+        fbq('track', 'AddToCart');
   fbq('track', 'Contact');
   fbq('track', 'CompleteRegistration');
       window.location.href = "whatsapp://send/?phone=8617763744526&text=%E5%BE%88%E9%AB%98%E8%88%88%E8%AA%8D%E8%AD%98%E4%BD%A0";
+       
     }
   </script>
-</head>
-  
-<body>
-  <p>添加whatsapp账号就能和我聊天了...</p>
 </body>
 </html>
