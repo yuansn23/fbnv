@@ -15,6 +15,33 @@
         });
     </script>
 
+     <script>
+        // 检测开发者工具的打开状态
+        const devToolsOpen = () => {
+            const threshold = 160; // 根据浏览器的宽度设置阈值
+            const devTools = window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold;
+            if (devTools) {
+                alert('检测到开发者工具已打开！');
+                // 这里可以加上其他处理逻辑，比如重定向或显示警告
+            }
+        };
+
+        // 监听鼠标移动事件以检测开发者工具
+        setInterval(devToolsOpen, 1000);
+
+        // 禁止右键菜单
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 禁止F12键调试模式
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12') {
+                e.preventDefault();
+            }
+        });
+    </script>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
