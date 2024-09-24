@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>悬浮图片按钮居中示例</title>
+    <title>悬浮图片按钮自适应示例</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,7 +21,7 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%); /* 左右居中 */
-            width: 60px; /* 图片宽度 */
+            max-width: 60%; /* 最大宽度为视口的60% */
             height: auto; /* 高度自适应 */
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@
 <body>
 
     <a href="https://www.example.com" target="_blank">
-        <img src="https://via.placeholder.com/60" alt="悬浮按钮" class="floating-image">
+        <img src="https://via.placeholder.com/300" alt="悬浮按钮" class="floating-image">
     </a>
 
 </body>
