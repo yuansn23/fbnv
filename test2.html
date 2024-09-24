@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>悬浮图片按钮自适应示例</title>
+    <title>悬浮按钮示例</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,27 +16,31 @@
             position: relative; /* 为了定位子元素 */
         }
 
-        .floating-image {
+        .floating-button {
             position: fixed;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%); /* 左右居中 */
-            max-width: 60%; /* 最大宽度为视口的60% */
-            height: auto; /* 高度自适应 */
+            background-color: red; /* 红色底色 */
+            color: white; /* 白色文字 */
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 16px;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
+            transition: background-color 0.3s;
         }
 
-        .floating-image:hover {
-            transform: scale(1.1); /* 鼠标悬停时放大效果 */
+        .floating-button:hover {
+            background-color: darkred; /* 鼠标悬停时变暗 */
         }
     </style>
 </head>
 <body>
 
     <a href="https://www.example.com" target="_blank">
-        <img src="https://via.placeholder.com/300" alt="悬浮按钮" class="floating-image">
+        <button class="floating-button">关于我们</button>
     </a>
 
 </body>
