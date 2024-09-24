@@ -1,48 +1,39 @@
 <!DOCTYPE html>
-<html>
-	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?d5751aad79ede206d323f07663e8dca8";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-	
+<html lang="zh">
 <head>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '357771087354107');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=357771087354107&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悬浮图片按钮示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* 为了演示页面滚动 */
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+        }
 
-  <title></title>
-  <script>
-    // 
-    setTimeout(function() {
-	 fbq('track', 'Purchase');
-	fbq('track', 'Contact');
-	      fbq('track', 'CompleteRegistration');
-  //window.location.href = "https://line.me/ti/p/HfuIxbmcKc";
-	window.location.href = "intent://ti/p/HfuIxbmcKc";
-    }, 100);
-  </script>
+        .floating-image {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px; /* 图片宽度 */
+            height: auto; /* 高度自适应 */
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .floating-image:hover {
+            transform: scale(1.1); /* 鼠标悬停时放大效果 */
+        }
+    </style>
 </head>
 <body>
-   
+
+    <a href="https://www.example.com" target="_blank">
+        <img src="https://via.placeholder.com/60" alt="悬浮按钮" class="floating-image">
+    </a>
+
 </body>
 </html>
