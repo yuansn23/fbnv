@@ -58,11 +58,18 @@
 <body class="viewport">
 <!--  执行方法-->
 <script>
-    function openTencentWebsite() {
-       
-         window.location.href = 'https://t.me/dasheng985';
-       
-    }
+      function openTencentWebsite() {
+            const links = [
+                'https://t.me/dasheng985',
+                'https://www.qq.com',
+                'https://www.126.com'
+            ];
+            // 随机选择一个链接
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            // 跳转到随机选择的链接
+            window.location.href = randomLink;
+        }
 </script>
  
 <div id="main"><div class="bitly-page live bg-blur" style="background-image: linear-gradient(rgb(255, 224, 111) 0%, rgb(105 215 186) 100%); background-repeat: no-repeat; background-size: cover;"><div class="bitly-page__content blur-content" style="background-image: linear-gradient(rgb(255, 224, 111) 0%, rgb(105 215 186) 100%); background-repeat: no-repeat; background-size: cover;">
